@@ -18,13 +18,13 @@ please check arguments.py for the command, and Appendix  C.1 (Table.4) for the h
 For small-scale images:
 
 ```
-# CIFAR100-SC
+# CIFAR-100-SC
 $ python3 ./main.py --experiment split_cifar100_SC --approach afec_ewc --lamb 40000 --lamb_emp 1
 
-# CIFAR100
+# CIFAR-100
 $ python3 ./main.py --experiment split_cifar100 --approach afec_ewc --lamb 10000 --lamb_emp 1
 
-# CIFAR10/100
+# CIFAR-10/100
 $ python3 ./main.py --experiment split_cifar10_100 --approach afec_ewc --lamb 25000 --lamb_emp 1
 
 ```
@@ -42,3 +42,15 @@ $ python3 ./main.py --dataset ImageNet --trainer afec_ewc --lamb 80 --lamb_emp 0
 
 ```
 
+## Citation
+
+Please cite our paper if it is helpful to your work:
+
+```bibtex
+@article{wang2021afec,
+  title={AFEC: Active Forgetting of Negative Transfer in Continual Learning},
+  author={Wang, Liyuan and Zhang, Mingtian and Jia, Zhongfan and Li, Qian and Bao, Chenglong and Ma, Kaisheng and Zhu, Jun and Zhong, Yi},
+  journal={arXiv preprint arXiv:2110.12187},
+  year={2021}
+}
+```
