@@ -1,7 +1,7 @@
 # [AFEC: Active Forgetting of Negative Transfer in Continual Learning]() 
 
 ------
-This code is the official implementation of our paper, which will be published in NeurIPS2022.
+This code is the official implementation of our paper, which will be published in NeurIPS2021.
 
 ## **Execution Details**
 
