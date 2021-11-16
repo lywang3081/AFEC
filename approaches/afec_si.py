@@ -59,8 +59,7 @@ class Appr(object):
 
     def _get_optimizer(self, lr=None):
         if lr is None: lr = self.lr
-        optimizer = torch.optim.Adam(itertools.chain(self.model.parameters(), self.vae.parameters()), lr=lr)
-        # optimizer = torch.optim.Adam(self.model.parameters(), lr=lr)
+        optimizer = torch.optim.Adam(self.model.parameters(), lr=lr)
         return optimizer
 
     def _get_optimizer_emp(self, lr=None):
