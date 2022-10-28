@@ -148,8 +148,7 @@ class Appr(object):
 
     def train_epoch(self,t,x,y, epoch):
         self.model.train()
-        self.vae.train()
-
+        
         r=np.arange(x.size(0))
         np.random.shuffle(r)
         r=torch.LongTensor(r).cuda()
