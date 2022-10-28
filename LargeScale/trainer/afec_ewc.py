@@ -97,7 +97,6 @@ class Trainer(trainer.GenericTrainer):
         self.fisher_iterator = torch.utils.data.DataLoader(train_loader, batch_size=20, shuffle=True, **kwargs)
         for epoch in range(self.args.nepochs):
             self.model.train()
-            self.vae.train()
             self.update_lr(epoch, self.args.schedule)
             self.update_lr_emp(epoch, self.args.schedule)
 
